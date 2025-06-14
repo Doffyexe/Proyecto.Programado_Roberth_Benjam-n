@@ -1,0 +1,60 @@
+/* Fondo general */
+body {
+  background-color: #e6f0fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  margin-top: 50px;
+}
+
+/* Tabla principal del menú */
+.menu-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+.menu-title {
+  text-align: center;
+  color: #003366;
+  font-size: 28px;
+}
+
+/* Botones de menú */
+.menu-button {
+  width: 150px;
+  height: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: #0077b6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #005f87;
+}
+.menu-button {
+  transition: all 0.3s ease;
+}
+/* Efecto hover y active */
+.menu-button:hover {
+  background-color: #005f87;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+/* Efecto clic */
+.menu-button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+/* Iconos: formato */
+.icono {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
