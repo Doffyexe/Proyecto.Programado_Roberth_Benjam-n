@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Administración de Base de Datos</title>
+  <link rel="stylesheet" href="estiloBD2.css">
+</head>
+<body>
+  <div class="pantalla-completa">
+
+    <h2 class="titulo">Administración de Base de Datos</h2>
+
+    <div class="botones-superiores">
+      <button>Carreras</button>
+      <button>Autentificación</button>
+    </div>
+
+    <div class="contenido-principal">
+
+      <!-- FORMULARIO AUTENTIFICACIÓN -->
+      <div class="formulario">
+        <form>
+          <label>Cédula:
+            <input type="text" name="cedula">
+          </label>
+
+          <label>Nombre:
+            <input type="text" name="nombre1" pattern="[A-Za-z\s]+">
+          </label>
+
+          <label>Segundo nombre:
+            <input type="text" name="nombre2" pattern="[A-Za-z\s]+">
+          </label>
+
+          <label>Apellido:
+            <input type="text" name="apellido1" pattern="[A-Za-z\s]+">
+          </label>
+
+          <label>Segundo apellido:
+            <input type="text" name="apellido2" pattern="[A-Za-z\s]+">
+          </label>
+
+          <label>Usuario:
+            <input type="text" name="usuario" pattern="[A-Za-z\s]+">
+          </label>
+
+          <label>Contraseña:
+            <input type="password" name="password">
+          </label>
+        </form>
+      </div>
+
+      <!-- TABLA AUTENTIFICACIÓN -->
+      <div class="tabla-resultados">
+        <h3 class="subtitulo-seccion">Gestión de Autentificación</h3>
+        <div class="tabla-contenedor">
+          <table class="tabla-estetica">
+            <thead>
+              <tr>
+                <th>Cédula</th>
+                <th>Nombre</th>
+                <th>Segundo Nombre</th>
+                <th>Apellido</th>
+                <th>Segundo Apellido</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-carreras">
+              <!-- Aquí se insertarán las filas dinámicamente -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTONES DE ACCIÓN ABAJO -->
+    <div class="acciones-formulario">
+      <input class="botones-acciones" type="submit" value="Insertar" onclick="limpiarCampos()">
+      <input class="botones-acciones" type="submit" value="Actualizar" onclick="limpiarCampos()">
+      <input class="botones-acciones" type="submit" value="Eliminar" onclick="limpiarCampos()">
+      <input class="botones-acciones" type="button" value="Ver Todos" onclick="limpiarCampos()">
+    </div>
+
+    <!-- BOTÓN VOLVER -->
+    <div class="volver">
+      <a href="frm_menu.html"><button class="btn-volver">Regresar</button></a>
+    </div>
+
+  </div>
+
+  <script>
+    function limpiarCampos() {
+      const formulario = document.querySelector('.formulario form');
+      formulario.reset();
+    }
+  </script>
+</body>
+</html>
+

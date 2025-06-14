@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e8f1f8;
+}
+.contenedor {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.titulo {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 30px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 5px rgba(0,119,182,0.3);
+}
+.boton {
+  background-color: #0077b6;
+  color: white;
+  padding: 12px 0;
+  width: 140px;             
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 10px 10px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.boton:hover {
+  background-color: #005f87;
+  transform: translateY(-3px);
+}
+.boton:active {
+  background-color: #004d6a;
+  
+}
+.botones-centro {
+  text-align: center;
+  margin-top: 20px;
+}
