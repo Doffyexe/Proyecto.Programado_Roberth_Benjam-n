@@ -1,0 +1,60 @@
+body {
+  background-color: #e6f0fa;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 600px;
+}
+
+.titulo {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.autores {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.autor {
+  width: 40%;
+}
+
+.autor img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #0077b6;
+}
+
+.boton-volver {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-volver:hover {
+  background-color: #005f87;
+}
+
